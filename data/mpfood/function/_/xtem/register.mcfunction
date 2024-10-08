@@ -16,10 +16,6 @@ data modify storage mpfood:var register.item.components."minecraft:consumable".o
 data modify storage mpfood:var register.item.components."minecraft:food".nutrition set from storage mpfood:var register.food.food_stats.nutrition
 data modify storage mpfood:var register.item.components."minecraft:food".saturation set from storage mpfood:var register.food.food_stats.saturation
 
-#>---- D E B U G --------
-data modify storage loggr:in log.message set from storage mpfood:var register.item
-function loggr:api/log
-#>--------------
 
 data modify entity @s item.components set from storage mpfood:var register.item.components
 
