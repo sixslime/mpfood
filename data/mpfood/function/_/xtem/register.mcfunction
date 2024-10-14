@@ -16,6 +16,7 @@ data modify storage mpfood:var register.item.components."minecraft:consumable".o
 data modify storage mpfood:var register.item.components."minecraft:food".nutrition set from storage mpfood:var register.food.food_stats.nutrition
 data modify storage mpfood:var register.item.components."minecraft:food".saturation set from storage mpfood:var register.food.food_stats.saturation
 
+execute if data storage mpfood:var register.food.stack_size run data modify storage mpfood:var register.item.components."minecraft:max_stack_size" set from storage mpfood:var register.food.stack_size
 
 data modify entity @s item.components set from storage mpfood:var register.item.components
 
